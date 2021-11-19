@@ -1,0 +1,121 @@
+.about-container {
+  margin-left: 11rem;
+  margin-right: 11rem;
+  align-content: center;
+}
+.about-banner {
+  height: 16rem;
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(46, 78, 71, 0.95) 25%,
+      rgba(46, 78, 71, 0.6) 50%,
+      rgba(46, 78, 71, 0.95) 75%
+    ),
+    url('../images/banner_1.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.about-banner-title {
+  color: var(--text-color-white);
+  font-family: var(--font-staatliches);
+  text-align: center;
+  font-size: 2.8rem;
+
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.about-banner-span-yellow {
+  margin: 0;
+  color: var(--color-base-second);
+  font-family: var(--font-metropolis-regular);
+  font-size: 0.9rem;
+  text-align: center;
+}
+.about-banner-span-white {
+  margin: 0;
+  color: var(--text-color-white);
+  font-family: var(--font-metropolis-bold);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 29rem;
+  grid-template-areas: 'imagem about-us';
+}
+
+.about-us-img {
+  height: 27rem;
+  width: 50vw;
+  grid-area: imagem;
+}
+
+.about-us-text {
+  height: 27rem;
+  width: auto;
+  grid-area: about-us;
+}
+
+.about-us-text h2 {
+  padding-top: 5%;
+  margin-right: 11rem;
+  margin-left: 2rem;
+  color: var(--text-color-dark);
+  font-family: var(--font-metropolis-bold);
+  margin-bottom: 2rem;
+}
+
+.about-us-text h3 {
+  margin-right: 11rem;
+  margin-left: 2rem;
+  color: var(--text-color-light);
+  font-family: var(--font-metropolis-regular);
+  font-size: 0.825rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.about-us-button {
+  background-color: var(--color-base-second);
+  color: var(--text-color-white);
+  margin-left: 2rem;
+  border-radius: 10rem;
+
+  height: 1.8rem;
+  width: 11rem;
+  font-family: var(--font-rubik);
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+
+/* --- SMARTFONE --- */
+@media (max-width: 768px) {
+  .about-banner-title {
+    font-size: 1rem;
+  }
+  .about-banner-span-yellow,
+  .about-banner-span-white {
+    font-size: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25rem 29rem;
+    grid-template-areas:
+      'imagem'
+      'about-us';
+  }
+  .about-us-img {
+    height: 25rem;
+    width: 100vw;
+    grid-area: imagem;
+  }
+}

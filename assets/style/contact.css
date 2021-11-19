@@ -1,0 +1,73 @@
+.contact-page {
+  height: 29rem;
+}
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 29rem;
+  grid-template-areas: 'imagem about-us';
+}
+.contact-page-form {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+.contact-page-form-img {
+  height: 29rem;
+  width: 50vw;
+  grid-area: imagem;
+}
+.contact-page-form-title {
+  color: var(--text-color-dark);
+  font-family: var(--font-metropolis-bold);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.contact-page-form-contact input {
+  width: 450px;
+  height: 45px;
+  border: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  background-color: #5a8884;
+  margin-bottom: 5px;
+  border-radius: 29px;
+}
+.contact-page-form-contact textarea {
+  width: 450px;
+  height: 100px;
+  border: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  background-color: #5a8884;
+  margin-bottom: 5px;
+  border-radius: 29px;
+  resize: none;
+}
+
+.contact-page-form-contact input::placeholder {
+  color: var(--text-color-white);
+  font-family: var(--font-metropolis-regular);
+  font-size: 0.625rem;
+  padding-left: 30px;
+}
+.contact-page-form-contact textarea::placeholder {
+  color: var(--text-color-white);
+  font-family: var(--font-metropolis-regular);
+  font-size: 0.625rem;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.contact-page-form-button {
+  background-color: var(--color-base-second);
+  color: var(--text-color-white);
+  margin: 0;
+  margin-top: 0.6rem;
+  border-radius: 10rem;
+
+  height: 1.8rem;
+  width: 11rem;
+  font-family: var(----font-metropolis-bold);
+  font-weight: 400;
+  font-size: 0.5rem;
+}

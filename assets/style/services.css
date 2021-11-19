@@ -1,0 +1,122 @@
+.services-container {
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.services-banner {
+  height: 16rem;
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(46, 78, 71, 0.95) 25%,
+      rgba(46, 78, 71, 0.6) 50%,
+      rgba(46, 78, 71, 0.95) 75%
+    ),
+    url('../images/banner_1.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.services-banner-title {
+  color: var(--text-color-white);
+  font-family: var(--font-staatliches);
+  text-align: center;
+  font-size: 3rem;
+
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.services-banner-span-yellow {
+  margin: 0;
+  color: var(--color-base-second);
+  font-family: var(--font-metropolis-regular);
+  font-size: 1rem;
+  text-align: center;
+}
+.services-banner-span-white {
+  margin: 0;
+  color: var(--text-color-white);
+  font-family: var(--font-metropolis-bold);
+  font-size: 1rem;
+  text-align: center;
+}
+.services-content {
+  height: 45rem;
+}
+
+.service-paginator {
+  height: 4rem;
+  width: 100%;
+  padding-right: 4rem;
+}
+.service-paginator nav {
+  display: inline;
+  text-align: center;
+}
+.service-paginator li {
+  display: inline-block;
+}
+
+.services-img-paginator-previous {
+  transform: rotate(180deg);
+  margin-left: 7rem;
+}
+.services-img-paginator-next {
+  margin-left: 15rem;
+  margin-right: 5rem;
+}
+
+.services-paginator-previous {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 2rem;
+  font-family: var(--font-metropolis-bold);
+  font-size: 0.625rem;
+  color: var(--text-color-green);
+}
+.services-paginator-previous:hover {
+  font-size: 0.725rem;
+  color: var(--text-color-green);
+}
+
+.services-paginator-page-link {
+  list-style: none;
+  text-decoration: none;
+
+  font-family: var(--font-metropolis-bold);
+  font-size: 0.625rem;
+  color: var(--text-color-green);
+  margin: 1rem;
+}
+.services-paginator-page-link:hover {
+  font-size: 0.725rem;
+  color: var(--text-color-green);
+
+  border-style: solid;
+  border-color: var(--color-base-second);
+  border-bottom-width: 0.225rem;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  cursor: none;
+}
+.services-paginator-next {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 2rem;
+  font-family: var(--font-metropolis-bold);
+  font-size: 0.625rem;
+  color: var(--text-color-green);
+}
+.services-paginator-next:hover {
+  font-size: 0.725rem;
+  color: var(--text-color-green);
+}
+
+.no-style {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
